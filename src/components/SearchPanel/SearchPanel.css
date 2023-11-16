@@ -1,0 +1,13 @@
+.search-panel {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input {
+    padding: 13px;
+    width: 50%;
+    margin-right: 2%;
+    font-size: 15px;
+    border: 1px solid #eaeaea ;
+    border-radius: 50px;
+}

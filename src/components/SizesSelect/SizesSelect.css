@@ -1,0 +1,95 @@
+.custom-select {
+    padding: 10px;
+
+    width: 100%; /* Устанавливаем ширину на всю ширину родительского контейнера */
+  }
+  
+  .select-header {
+    cursor: pointer;
+    padding: 10px;
+ 
+    background-color: #fff;
+    border-radius: 4px;
+    width: 100%; /* Устанавливаем ширину на всю ширину родительского контейнера */
+    text-align: left; /* Выравниваем текст слева */
+  }
+  
+  .options {
+ 
+    /* margin: 10px; */
+    margin-top: 0;
+    margin-left: 0;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Устанавливаем ширину на всю ширину родительского контейнера */
+    background-color: #fff;
+/* 
+    border-top: 1px solid#e5e5e5;
+    border-left: 1px solid #e5e5e5; */
+    border-radius: 0 0 4px 4px;
+    display: none;
+    display: flex; /* Делаем flex-контейнер */
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+    justify-content: space-between; /* Равномерное распределение между опциями */
+  }
+  
+  .option {
+    /* border-right: .5px solid #e5e5e5;
+    border-bottom: .5px solid #e5e5e5; */
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    width: 50%; /* Устанавливаем ширину опции в 48% (2 колонки с небольшим отступом) */
+    /* margin: 1%; Добавляем небольшой отступ между опциями */
+    box-sizing: border-box; /* Учитываем padding в ширине опции */
+    /* border-radius: 5px; */
+    transition: all .2s linear;
+    
+  }
+  .option:nth-child(even) {
+    border-left: 0;
+ 
+  }
+  .option:hover {
+    /* background-color: #f0f0f0; */
+  }
+  .option.selected {
+    /* box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.2); */
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    /* border-right: 1px solid #000;
+    
+    border-bottom: .5px solid #000; */
+  }
+  .select-header {
+    /* ... */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .selected-option {
+    flex: 1; /* Расширяет selected-option на всю доступную ширину */
+  }
+  
+  .arrow {
+    margin-left: 5px; /* Добавляет небольшой отступ между выбранной опцией и стрелкой */
+  }
+  
+  /* Добавляем стиль для открытого селекта */
+  .select-header.open .arrow {
+    transform: rotate(180deg); /* Поворачивает стрелку вверх при открытом селекте */
+  }
+  
+  /* Добавляем стили для стрелки (может потребоваться дополнительная стилизация) */
+  .arrow {
+    /* font-size: 12px; */
+    line-height: 1;
+  }
+  .preorder {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    line-height: 26px;
+  }

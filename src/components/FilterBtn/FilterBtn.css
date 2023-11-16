@@ -1,0 +1,50 @@
+.filter-select {
+    position: relative;
+    display: flex;
+    width: 50%;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+ 
+  }
+  .filter-select.open {
+    overflow: visible;
+  }
+  .filter-header {
+    padding: 13px;
+    width: 100%;
+    cursor: pointer;
+    
+  }
+  
+  .filter-header.open {
+    background-color: #f0f0f0;
+  }
+  
+  .filter-options {
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .filter-options.open {
+    z-index: 9;
+    display: block;
+    background-color: #fff;
+  }
+  
+  .filter-option {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .filter-option:hover {
+    background-color: #f0f0f0;
+  }
+  

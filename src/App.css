@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'San Francisco';
+  src: local('SanFrancisco'),
+    url('./fonts/SanFrancisco/SF-Pro-Display-Semibold.otf') format('opentype');
+  /* font-weight: bold; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'San Francisco';
+  /* letter-spacing: 10cap; */
+}
+
+body {
+  /* background: var(--tg-theme-bg-color); */
+  background-color: #fff;
+  /* color: var(--tg-theme-text-color); */
+  color: black;
+}
+.carousel .control-dots .dot {
+  background-color: black !important;
+}
