@@ -21,7 +21,7 @@ const ProductItem = ({ product, className, onAdd }) => {
 			/>
 			<div className={"title"}>{product?.itemText}</div>
 			<span className={"price"}>
-				от <b>{product.itemPrice * 150} ₽</b>
+				от <b>{product.itemPrice * 155} ₽</b>
 			</span>
 			{/* <div className={"title"}>{product?.itemText}</div>
 			<div className={"description"}>{product.itemDescription}</div>
