@@ -28,7 +28,7 @@ const ProductDetail = () => {
 				itemText: product.itemText + " " + product.itemDescription,
 				itemSize: selectedOption,
 				itemSKU: product.itemSKU,
-				itemPrice: product.itemPrice * 155,
+				itemPrice: (product.itemPrice * 155).toFixed(2),
 				itemImage: product.itemImage[0],
 			})
 		);
@@ -107,7 +107,7 @@ const ProductDetail = () => {
 						}
 					</div>
 					<span className={"detail-price"}>
-						Стоимость: от <b>{product.itemPrice * 155} ₽</b>
+						Стоимость: от <b>{(product.itemPrice * 155).toFixed(2)} ₽</b>
 					</span>
 
 					<button
